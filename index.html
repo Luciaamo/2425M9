@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion0</title>
+    <style>
+        td{
+            color: white;
+            padding: 10px;
+        }
+        thead{
+            background-color: aqua;
+        }
+        tfoot{
+            background-color: blueviolet;
+        }
+        tbody{
+            background-color: beige;
+        }
+        .formulario{
+            padding: 50px;
+            border: 1px solid;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sesión 0</h1>
+    <h2>Centro de formación profesional FPLLEFIÀ</h2>
+    <a href="https://www.fpllefia.com/" target="_blank" title="FPLLEFIA">
+        <div id="fpllefia" title="FPLLEFIA">
+            <P>Entra en fpllefia</P>
+            <img src="https://www.fpllefia.com/images/logo40web.png" alt="logo_fpllefia">
+        </div>
+    </a>
+    <blockquote cite="https://www.fpllefia.com/">Més de 50 anys d'experiència en la formació de professionals</blockquote>
+    
+    <ul class="menu">
+        <li> <a href="#">item1</a></li>
+        <li>item2
+            <ul class="submenu">
+                <li>subitem1</li>
+                <li>subitem2</li>
+                <li>subitem3</li>
+            </ul>
+        </li>
+        <li>item3
+            <ul class="submenu">
+                <li>subitem1</li>
+                <li>subitem2</li>
+                <li>subitem3</li>
+            </ul>
+        </li>
+    </ul>
+
+    <table style="border: 1px solid blue">
+    <thead>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item 3</td>
+        </tr>
+        <tr>
+            <td>item 1</td>
+            <td>item 2</td>
+            <td>item3</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">item 1</td>
+        </tr>
+    </tfoot>
+    </table>
+
+    <form class="formulario" method="get" action="http://www.api.com/endpoint">
+        <label for="nombre">Introduce tu nombre</label>
+        <input type="text" id="nombre" name="Nombre" value="Federico" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" min="18">
+        <label>Introduce la fecha:
+            <input type="date">
+        </label>
+        
+        <select name="fruta" id="fruta">
+            <option value="pera">PERA</option>
+            <option value="fresa">FRESA</option>
+        </select>
+        <input name="check" type="checkbox" checked>
+        <div>
+            <input type="radio" name="radio">
+            <input type="radio" name="radio">
+        </div>
+        
+        <button>Enviar también</button>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
