@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Futbol Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-success text-white text-center p-4">
+    <h1>Futbol Club</h1>
+    <p>Notícies, Resultats i Classificacions</p>
+</header>
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">FC Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inici</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Classificacions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacte</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <!-- Secció de Cards -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagenes/estadio.jpg" class="card-img-top" alt="Jugador Estrella">
+                <div class="card-body">
+                    <h5 class="card-title">Jugador Estrella</h5>
+                    <p class="card-text">El nostre millor jugador de la temporada.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagenes/jugador.jpg" class="card-img-top" alt="El Camp">
+                <div class="card-body">
+                    <h5 class="card-title">El Camp</h5>
+                    <p class="card-text">El nostre estadi, preparat per a grans partits.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="imagenes/trofeo.jpg" class="card-img-top" alt="Trofeu de Campions">
+                <div class="card-body">
+                    <h5 class="card-title">Trofeu de Campions</h5>
+                    <p class="card-text">El nostre objectiu aquesta temporada: guanyar el títol.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulari de Newsletter -->
+    <form class="border shadow p-4 mt-5">
+        <h5>Inscriu-te a la nostra Newsletter</h5>
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Escriu el teu nom">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correu electrònic</label>
+            <input type="email" class="form-control" id="email" placeholder="nom@exemple.com">
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#proximPartitModal">
+            Veure Proper Partit
+        </button>
+    </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="proximPartitModal" tabindex="-1" aria-labelledby="proximPartitLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="proximPartitLabel">Pròxim Partit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    El pròxim partit serà entre l'Equip A i l'Equip B el 30 d'octubre.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tanca</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alerta -->
+    <div class="alert alert-warning mt-4" role="alert">
+        Última notícia: El nostre davanter ha marcat el seu 100è gol aquesta temporada!
+    </div>
+</main>
+
+<footer class="bg-light text-center p-3 mt-5">
+    <p>&copy; 2024 FC Bootstrap - Tots els drets reservats</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
